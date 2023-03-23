@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root4">not</div>
+    <div id="root2"></div>
+    <div id="root5"></div>
+    <h1>qwertyu</h1>
+    
+</body>
+<!-- <script>
+    const heading = document.createElement("P1");
+
+    heading.innerHTML = "inpu html element using js";
+
+    const root = document.getElementById("root");
+
+    root.appendChild(heading)
+</script> -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+const heading = React.createElement("h1",{},"helloWorld");
+
+const root1 = ReactDOM.createRoot(document.getElementById("root"));
+
+root1.render(heading);
+
+</script>
+
+
+<script>
+
+    const head = document.createElement("h2");
+
+    head.innerHTML = "heading";
+
+    const roooot = document.getElementById("root2");
+
+    roooot.appendChild(head)
+
+</script>
+
+<script>
+
+    const head1 = React.createElement("h3",{id:"title"},"hello");
+
+    const root4 = ReactDOM.createRoot(document.getElementById("root4"))
+
+    root4.render(head1)
+
+</script>
+
+<script>
+    
+    const head21 = React.createElement("h1",{id:"first"},"first");
+
+    const head22 = React.createElement("h2",{id:"second"},"second");
+
+    console.log(head21)
+
+    const div = React.createElement("div",{id:"head"},[head21,head22]);
+
+
+    const root52 = ReactDOM.createRoot(document.getElementById("root5"));
+
+    root52.render(div)
+
+
+
+</script>
+
+<!-- div>div>h1*9.head -->
+<div>
+    <div>
+        <h1><span></span></h1>
+    </div>
+</div>
+
+
+
+
+<div>
+    <div>
+        <h1><span class="sss"></span></h1>
+    </div>
+</div>
+<div>
+    <div>
+        <h1 class="sss"></h1>
+        <h1 class="sss"></h1>
+        <h1 class="sss"></h1>
+        <h1 class="sss"></h1>
+        <h1 class="sss"></h1>
+    </div>
+</div>
+</html>
